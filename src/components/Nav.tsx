@@ -7,7 +7,7 @@ const Nav = () => {
         <Link to={'/'} className='font-HG font-bold text-2xl'>
           LOGO
         </Link>
-        <section className='flex items-center justify-between w-1/2 font-semibold font-HG'>
+        <section className='flex items-center justify-between w-1/2 text-lg font-semibold font-HG'>
           <Link to={'/services'}>Services</Link>
           <Link to={'/industries'}>Industries</Link>
           <Link to={'/about'}>About Us</Link>
@@ -15,7 +15,7 @@ const Nav = () => {
           <Link to={'/blog'}>Blog</Link>
           <Link
             to={'/contact'}
-            className='text-primary border py-2 px-6 rounded-full'
+            className='text-primary border border-primary py-2 px-6 rounded-full'
           >
             Contact Us
           </Link>
