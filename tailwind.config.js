@@ -2,10 +2,10 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    colors: {
-      primary: '#F9BC6E',
-    },
     extend: {
+      colors: {
+        primary: '#F9BC6E',
+      },
       fontFamily: {
         HG: ['Hanken Grotesk', 'sans-serif'],
       },
