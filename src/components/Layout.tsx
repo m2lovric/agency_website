@@ -1,13 +1,15 @@
+import Nav from './Nav';
+
 interface LayoutProps {
   children: React.ReactNode;
 }
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <>
-      <nav></nav>
+    <div className='w-full'>
+      <Nav />
       <main>{children}</main>
-    </>
+    </div>
   );
 };
 
