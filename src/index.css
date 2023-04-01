@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .home-article {
+    @apply w-9/12 rounded-xl font-HG text-lg flex items-center shadow-2xl my-4 px-16 py-5
+  }
+}
+
+@layer components {
+  .number-after {
+      @apply after:absolute after:-top-28 after:right-0 after:block after:font-black after:text-primary after:text-9xl after:opacity-20 
+    }
+  
+  .number-before {
+    @apply before:absolute before:-top-28 before:left-0 before:block before:font-black before:text-primary before:text-9xl before:opacity-20
+  }
+}
