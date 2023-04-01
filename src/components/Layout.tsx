@@ -1,3 +1,4 @@
+import Footer from './Footer';
 import Nav from './Nav';
 
 interface LayoutProps {
@@ -9,6 +10,7 @@ const Layout = ({ children }: LayoutProps) => {
     <div className='w-full'>
       <Nav />
       <main>{children}</main>
+      <Footer />
     </div>
   );
 };
