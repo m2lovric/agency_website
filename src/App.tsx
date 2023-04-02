@@ -1,9 +1,37 @@
 import Layout from './components/Layout';
 import Button from './components/Button';
-import { Competitors, Goal, Launch, Strategy, Hero } from './images';
+import { Competitors, Goal, Launch, Strategy, Hero, Marketing } from './images';
 import Line from './components/Line';
+import { useEffect, useRef, useState } from 'react';
+import { motion } from 'framer-motion';
+
+interface Blog {
+  id: number;
+  title: string;
+  text: string;
+}
 
 function App() {
+  const [data, setData] = useState<Blog[]>([]);
+  const [width, setWidth] = useState<number>();
+  const carousel = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await fetch(
+        'https://raw.githubusercontent.com/m2lovric/agency_website/main/db/blog.json'
+      );
+      res.json().then((data) => {
+        setData(data);
+      });
+    };
+
+    fetchData();
+    if (carousel.current) {
+      setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
+    }
+  }, []);
+
   return (
     <Layout>
       <section className='flex justify-between bg-hero-pattern bg-bottom bg-no-repeat'>
@@ -102,7 +130,66 @@ function App() {
           </form>
         </div>
       </section>
-      <section className='py-72'>asdasd</section>
+
+      <section className='py-40'>sadasd</section>
+
+      <section className='bg-primary text-white py-60 mt-8 font-HG'>
+        <div className='container mx-auto flex items-center'>
+          <article className='w-5/12 '>
+            <Line />
+            <h1 className='font-sans font-bold text-6xl leading-normal'>
+              Digital Marketing
+              <br />
+              Articles
+            </h1>
+          </article>
+          {data.length > 0 && (
+            <motion.section ref={carousel} className='overflow-hidden w-7/12'>
+              <motion.section
+                drag='x'
+                dragConstraints={{ right: 0, left: width && -width }}
+                className='flex w-full cursor-grab'
+                whileTap={{ cursor: 'grabbing' }}
+                onClick={(e) =>
+                  setWidth(
+                    e.currentTarget.scrollWidth - e.currentTarget.offsetWidth
+                  )
+                }
+              >
+                {data.length > 0 &&
+                  data.map((blog) => (
+                    <motion.article
+                      key={blog.id}
+                      className='bg-secondary rounded-xl px-12 py-14 mr-8 font-HG'
+                    >
+                      <h2 className='font-bold text-5xl w-96 leading-tight'>
+                        {blog.title}
+                      </h2>
+                      <p className='font-light my-5'>{blog.text}</p>
+                      <button className='bg-white rounded-md py-5 px-9 font-HG font-bold text-black text-xl'>
+                        Read More
+                      </button>
+                    </motion.article>
+                  ))}
+              </motion.section>
+            </motion.section>
+          )}
+        </div>
+      </section>
+
+      <section className='flex justify-between'>
+        <article className='mt-52 ml-64'>
+          <h1 className='text-5xl font-bold font-sans'>Why Logo Agency?</h1>
+          <p className='text-xl text-black font-HG leading-10 my-6 text-opacity-70'>
+            To get customers, it's imperative to be seen by the mass. Every
+            successful company is unique and needs contrasting digital marketing
+            strategies. Book a meeting with us and we will help you find the
+            correct strategy for your company.
+          </p>
+          <Button text='Book Free meeting' />
+        </article>
+        <img src={Marketing} alt='hero' className='mt-16 w-7/12 h-auto' />
+      </section>
     </Layout>
   );
 }

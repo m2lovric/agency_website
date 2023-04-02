@@ -7,7 +7,7 @@ import Facebook from './assets/Facebook.png';
 import Instagram from './assets/Instagram.png';
 import LinkedIn from './assets/LinkedIn.png';
 import Twitter from './assets/Twitter.png';
-
+import Marketing from './assets/Marketing.svg';
 export {
   Competitors,
   Goal,
@@ -18,4 +18,5 @@ export {
   Instagram,
   LinkedIn,
   Twitter,
+  Marketing,
 };
