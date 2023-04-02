@@ -8,16 +8,16 @@ const Footer = () => {
         <Link to={'/'} className='font-HG font-bold text-2xl'>
           LOGO
         </Link>
-        <li className='mt-8'>REBORN STUDIO AB</li>
-        <li>Org.nr: 559264-1871</li>
+        <li className='mt-8'>LOGO STUDIO AB</li>
+        <li>Org.nr: 1234567-1871</li>
         <li>Lunar Holding LDA</li>
-        <li>info@dapixel.io</li>
-        <li>+467-20478390</li>
+        <li>info@logo.io</li>
+        <li>+000-01234567</li>
         <section className='flex justify-between mt-8 items-center'>
-          <img src={Facebook} alt='' />
-          <img src={Twitter} alt='' />
-          <img src={LinkedIn} alt='' />
-          <img src={Instagram} alt='' />
+          <img src={Facebook} alt='Facebook' />
+          <img src={Twitter} alt='Twitter' />
+          <img src={LinkedIn} alt='LinkedIn' />
+          <img src={Instagram} alt='Instagram' />
         </section>
       </ul>
       <section className='flex'>
