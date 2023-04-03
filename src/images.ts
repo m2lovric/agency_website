@@ -10,6 +10,9 @@ import Twitter from './assets/Twitter.png';
 import Marketing from './assets/Marketing.svg';
 import ArrowLeft from './assets/arrow-left.svg';
 import ArrowRight from './assets/arrow-right.svg';
+import ArrowLeftGold from './assets/arrow-left-gold.svg';
+import ArrowRightGold from './assets/arrow-right-gold.svg';
+import QuoteLeft from './assets/quote-left.png';
 
 export {
   Competitors,
@@ -24,4 +27,7 @@ export {
   Marketing,
   ArrowLeft,
   ArrowRight,
+  ArrowLeftGold,
+  ArrowRightGold,
+  QuoteLeft,
 };

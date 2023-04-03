@@ -16,7 +16,7 @@ interface Blog {
 function App() {
   const [data, setData] = useState<Blog[]>([]);
   const [width, setWidth] = useState<number>();
-  const carousel = useRef<HTMLDivElement>(null);
+  const slider = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -29,8 +29,8 @@ function App() {
     };
 
     fetchData();
-    if (carousel.current) {
-      setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
+    if (slider.current) {
+      setWidth(slider.current?.scrollWidth - slider.current?.offsetWidth);
     }
   }, []);
 
@@ -146,7 +146,7 @@ function App() {
             </h1>
           </article>
           {data.length > 0 && (
-            <motion.section ref={carousel} className='overflow-hidden w-7/12'>
+            <motion.section ref={slider} className='overflow-hidden w-7/12'>
               <motion.section
                 drag='x'
                 dragConstraints={{ right: 0, left: width && -width }}
