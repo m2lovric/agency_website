@@ -8,6 +8,9 @@ import Instagram from './assets/Instagram.png';
 import LinkedIn from './assets/LinkedIn.png';
 import Twitter from './assets/Twitter.png';
 import Marketing from './assets/Marketing.svg';
+import ArrowLeft from './assets/arrow-left.svg';
+import ArrowRight from './assets/arrow-right.svg';
+
 export {
   Competitors,
   Goal,
@@ -19,4 +22,6 @@ export {
   LinkedIn,
   Twitter,
   Marketing,
+  ArrowLeft,
+  ArrowRight,
 };
