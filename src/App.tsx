@@ -5,6 +5,7 @@ import Line from './components/Line';
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import WhyLogo from './components/WhyLogo';
+import Testimonials from './components/Testimonials';
 
 interface Blog {
   id: number;
@@ -132,7 +133,7 @@ function App() {
         </div>
       </section>
 
-      <section className='py-40'>sadasd</section>
+      <Testimonials />
 
       <section className='bg-primary text-white py-60 mt-8 font-HG'>
         <div className='container mx-auto flex items-center'>
