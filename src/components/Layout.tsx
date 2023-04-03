@@ -1,5 +1,6 @@
 import Footer from './Footer';
 import Nav from './Nav';
+import WhyLogo from './WhyLogo';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -10,6 +11,7 @@ const Layout = ({ children }: LayoutProps) => {
     <div className='w-full'>
       <Nav />
       <main>{children}</main>
+      <WhyLogo />
       <Footer />
     </div>
   );
