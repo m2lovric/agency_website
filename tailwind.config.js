@@ -19,6 +19,9 @@ module.exports = {
           '2xl': '4rem',
         },
       },
+      spacing: {
+        '30p': '31%',
+      },
     },
   },
   plugins: [],

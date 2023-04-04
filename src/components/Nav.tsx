@@ -34,7 +34,7 @@ const Nav = () => {
             className='text-primary relative group border border-primary bg-transparent py-2 px-6 rounded-full hover:text-white'
           >
             Contact Us
-            <div className='bg-primary w-0 h-full opacity-0 absolute top-0 left-0 rounded-full -z-10 transition-all duration-300 group-hover:w-full group-hover:opacity-100'></div>
+            <div className='bg-primary w-0 h-full opacity-0 absolute top-0 left-0 rounded-full -z-10 transition-all ease-in-out duration-300 group-hover:w-full group-hover:opacity-100'></div>
           </Link>
         </section>
       </section>
