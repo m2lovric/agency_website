@@ -14,6 +14,12 @@ import ArrowLeftGold from './assets/arrow-left-gold.svg';
 import ArrowRightGold from './assets/arrow-right-gold.svg';
 import QuoteLeft from './assets/quote-left.png';
 
+import ServicesHero from './assets/Services/Services_Hero.png';
+import ServicesFacebook from './assets/Services/ServicesFacebook.svg';
+import ServicesGoogle from './assets/Services/ServicesGoogle.svg';
+import ServicesSearch from './assets/Services/ServicesSearch.svg';
+import ServicesContent from './assets/Services/ServicesContent.svg';
+
 export {
   Competitors,
   Goal,
@@ -30,4 +36,9 @@ export {
   ArrowLeftGold,
   ArrowRightGold,
   QuoteLeft,
+  ServicesHero,
+  ServicesFacebook,
+  ServicesGoogle,
+  ServicesSearch,
+  ServicesContent,
 };
