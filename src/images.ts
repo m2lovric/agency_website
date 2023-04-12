@@ -20,6 +20,10 @@ import ServicesGoogle from './assets/Services/ServicesGoogle.svg';
 import ServicesSearch from './assets/Services/ServicesSearch.svg';
 import ServicesContent from './assets/Services/ServicesContent.svg';
 
+import AboutHero from './assets/about/AboutHero.png';
+import AboutProduct from './assets/about/AboutProduct.png';
+import AboutSolution from './assets/about/AboutSolution.png';
+
 export {
   Competitors,
   Goal,
@@ -41,4 +45,7 @@ export {
   ServicesGoogle,
   ServicesSearch,
   ServicesContent,
+  AboutHero,
+  AboutProduct,
+  AboutSolution,
 };
