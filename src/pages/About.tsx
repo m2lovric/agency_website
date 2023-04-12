@@ -1,11 +1,62 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import Form from '../components/Form';
+import Button from '../components/Button';
+import { AboutHero, AboutProduct, AboutSolution } from '../images';
 
 const About = () => {
   return (
     <Layout>
-      About
+      <section className='flex justify-between bg-hero-pattern bg-bottom bg-no-repeat'>
+        <article className='mt-52 ml-64'>
+          <h1 className='text-7xl font-bold font-sans'>
+            Consistency - Drive -
+            <br />
+            Curiosity - Passion​
+          </h1>
+          <p className='text-2xl font-HG leading-10 my-6'>
+            In a constantly evolving and competitive digital world, it is
+            imperative to stay on top and in the know, be highly visible among
+            search results and feeds, and be responsive to your audience.
+          </p>
+          <Button text='Contact Us' full={false} />
+        </article>
+        <img src={AboutHero} alt='hero' className='mt-16' />
+      </section>
+
+      <section className='container mx-auto flex flex-col'>
+        <h1 className='font-sans text-5xl font-bold text-center mt-72 mb-14'>
+          Make a Difference For Your Business!
+        </h1>
+        <section className='flex justify-between'>
+          <p>
+            We understand that not every company has an in-house department that
+            is always updated and tracks the algorithms, trends, and changes
+            within digital marketing, but we strongly believe every company
+            should have somebody to do so! Therefore, we started Lunar Strategy
+            digital marketing agency – to offer companies solutions that are
+            completely customized to fit their business needs and goals. We
+            tailor high-performing marketing strategies intended to serve and
+            benefit your company long term. Lunar Strategy is a professional
+            digital marketing agency with a highly motivated team.
+          </p>
+          <img src={AboutSolution} alt='solution' />
+        </section>
+        <section className='flex justify-between'>
+          <img src={AboutProduct} alt='product' />
+          <p>
+            Most of us have profound hands-on experience working with and for
+            Google and Google Ads directly. Our marketing masters also have
+            experience with Facebook Ads and SEO. Our team lives and breathes
+            innovative, quick, and smart digital marketing solutions. We want to
+            help as many businesses as possible to find new potential customers,
+            reengage with old ones to reach far beyond growth expectations. Book
+            a meeting with us today, free of charge, and we’ll talk about how we
+            can implement a thorough and solid marketing strategy.
+          </p>
+        </section>
+      </section>
+
       <Form />
     </Layout>
   );
