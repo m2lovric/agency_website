@@ -46,7 +46,7 @@ function App() {
           <p className='text-2xl font-HG leading-10 my-6'>
             Featured in leading publications around the world
           </p>
-          <Button text='Contact Us' />
+          <Button text='Contact Us' full={false} />
         </article>
         <img src={Hero} alt='hero' className='mt-16' />
       </section>

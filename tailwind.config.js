@@ -7,7 +7,8 @@ module.exports = {
         primary: '#F9BC6E',
         secondary: '#DFA762',
         'soft-brown': '#C59E6F',
-        'soft-gray': 'C8C8C8',
+        'soft-gray': '#C8C8C8',
+        'soft-purple': '#B070FF',
       },
       fontFamily: {
         HG: ['Hanken Grotesk', 'sans-serif'],

@@ -43,7 +43,7 @@ const Blog = () => {
               <p className='font-HG font-light text-lg pt-7 pb-14 ml-0'>
                 {blog.text}
               </p>
-              <Button text='Read More' />
+              <Button text='Read More' full={false} />
             </article>
           ))}
       </section>

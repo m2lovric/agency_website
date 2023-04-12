@@ -4,6 +4,7 @@ import Button from '../components/Button';
 
 interface Specialist {
   id: number;
+  avatar: string;
   name: string;
   position: string;
   country: string;
@@ -12,14 +13,14 @@ interface Specialist {
 }
 
 const Team = () => {
-  const [blogs, setBlogs] = useState<Specialist[]>([]);
+  const [team, setTeam] = useState<Specialist[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch(
         'https://raw.githubusercontent.com/m2lovric/agency_website/main/db/specialists.json'
       );
-      res.json().then((data) => setBlogs(data));
+      res.json().then((data) => setTeam(data));
     };
 
     fetchData();
@@ -35,17 +36,29 @@ const Team = () => {
         </article>
       </section>
       <section className='container mx-auto w-full flex flex-wrap justify-between'>
-        {blogs.length > 0 &&
-          blogs.map((blog) => (
+        {team.length > 0 &&
+          team.map((developer) => (
             <article
-              key={blog.id}
-              className='basis-30p px-9 pt-14 pb-10 rounded-2xl bg-white shadow-2xl mt-10'
+              key={developer.id}
+              className='flex flex-col items-center basis-30p px-10 py-14 rounded-2xl bg-white shadow-2xl mt-10'
             >
-              <h2 className='font-sans font-bold text-3xl'>{blog.name}</h2>
-              <p className='font-HG font-light text-lg pt-7 pb-14 ml-0'>
-                {blog.country}
+              <div className='w-32 h-32 rounded-full border-4 border-primary'>
+                <img
+                  src={developer.avatar}
+                  alt='avatar'
+                  className='rounded-full border-white border-4'
+                />
+              </div>
+              <h2 className='font-sans font-bold text-3xl'>{developer.name}</h2>
+              <p className='font-HG font-light text-xl py-6'>
+                {developer.position}
               </p>
-              <Button text='Read More' />
+              <p className='font-HG font-light text-soft-purple text-xl text-center pb-8'>
+                {developer.country}, {developer.town}
+                <br />
+                {developer.email}
+              </p>
+              <Button text='Book a free meeting' full={true} />
             </article>
           ))}
       </section>
