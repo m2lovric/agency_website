@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "avatar": "https://scontent-fra3-1.xx.fbcdn.net/v/t1.6435-1/91532351_3372792769404243_2417892199090880512_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=FpcWdKnzhgEAX_de7ID&_nc_ht=scontent-fra3-1.xx&oh=00_AfAYvsUt4CGHNsFa0AB0mO7BFPs20LAwAgq9_-wEfS8QSA&oe=645DEF05",
     "name": "Matteo Lovrić",
     "position": "Frontend Developer",
     "country": "Croatia",
@@ -9,6 +10,7 @@
   },
   {
     "id": 2,
+    "avatar": "https://scontent-fra3-1.xx.fbcdn.net/v/t1.6435-1/91532351_3372792769404243_2417892199090880512_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=FpcWdKnzhgEAX_de7ID&_nc_ht=scontent-fra3-1.xx&oh=00_AfAYvsUt4CGHNsFa0AB0mO7BFPs20LAwAgq9_-wEfS8QSA&oe=645DEF05",
     "name": "Matteo Lovrić",
     "position": "Frontend Developer",
     "country": "Croatia",
@@ -17,6 +19,7 @@
   },
   {
     "id": 3,
+    "avatar": "https://scontent-fra3-1.xx.fbcdn.net/v/t1.6435-1/91532351_3372792769404243_2417892199090880512_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=FpcWdKnzhgEAX_de7ID&_nc_ht=scontent-fra3-1.xx&oh=00_AfAYvsUt4CGHNsFa0AB0mO7BFPs20LAwAgq9_-wEfS8QSA&oe=645DEF05",
     "name": "Matteo Lovrić",
     "position": "Frontend Developer",
     "country": "Croatia",
@@ -25,21 +28,25 @@
   },
   {
     "id": 4,
+    "avatar": "https://scontent-fra3-1.xx.fbcdn.net/v/t1.6435-1/91532351_3372792769404243_2417892199090880512_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=FpcWdKnzhgEAX_de7ID&_nc_ht=scontent-fra3-1.xx&oh=00_AfAYvsUt4CGHNsFa0AB0mO7BFPs20LAwAgq9_-wEfS8QSA&oe=645DEF05",
     "name": "Matteo Lovrić",
     "position": "Frontend Developer",
     "country": "Croatia",
     "town": "Nuštar",
     "email": "m4lovric@gmail.com"
-  },{
+  },
+  {
     "id": 5,
+    "avatar": "https://scontent-fra3-1.xx.fbcdn.net/v/t1.6435-1/91532351_3372792769404243_2417892199090880512_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=FpcWdKnzhgEAX_de7ID&_nc_ht=scontent-fra3-1.xx&oh=00_AfAYvsUt4CGHNsFa0AB0mO7BFPs20LAwAgq9_-wEfS8QSA&oe=645DEF05",
     "name": "Matteo Lovrić",
     "position": "Frontend Developer",
     "country": "Croatia",
     "town": "Nuštar",
     "email": "m4lovric@gmail.com"
-  }
-  ,{
+  },
+  {
     "id": 6,
+    "avatar": "https://scontent-fra3-1.xx.fbcdn.net/v/t1.6435-1/91532351_3372792769404243_2417892199090880512_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=FpcWdKnzhgEAX_de7ID&_nc_ht=scontent-fra3-1.xx&oh=00_AfAYvsUt4CGHNsFa0AB0mO7BFPs20LAwAgq9_-wEfS8QSA&oe=645DEF05",
     "name": "Matteo Lovrić",
     "position": "Frontend Developer",
     "country": "Croatia",
