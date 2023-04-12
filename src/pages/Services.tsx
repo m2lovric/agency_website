@@ -20,7 +20,7 @@ const Services = () => {
             consultation call where we find the best strategy towards reaching
             your goals.
           </p>
-          <Button text='Contact Us' />
+          <Button text='Contact Us' full={false} />
         </article>
         <img src={ServicesHero} alt='hero' className='mt-16' />
       </section>
@@ -41,7 +41,7 @@ const Services = () => {
               customer loyalty, building your social media following, and much
               more.
             </p>
-            <Button text='Book a free 30 minute meeting' />
+            <Button text='Book a free 30 minute meeting' full={true} />
           </article>
           <article className='p-16 shadow-2xl rounded-xl'>
             <img src={ServicesGoogle} alt='' />
@@ -57,7 +57,7 @@ const Services = () => {
               receive more phone calls, and increase your in-store visits and
               more.
             </p>
-            <Button text='Book a free 30 minute meeting' />
+            <Button text='Book a free 30 minute meeting' full={true} />
           </article>
         </div>
 
@@ -75,7 +75,7 @@ const Services = () => {
               influence how many sales can be generated for a lower cost. We
               make sure your content is aligned with the requirements of SEO.
             </p>
-            <Button text='Book a free 30 minute meeting' />
+            <Button text='Book a free 30 minute meeting' full={true} />
           </article>
           <article className='p-16 shadow-2xl rounded-xl'>
             <img src={ServicesContent} alt='' />
@@ -90,7 +90,7 @@ const Services = () => {
               results. We also offer our clients continuous web content like
               blog posts, listicles and similar
             </p>
-            <Button text='Book a free 30 minute meeting' />
+            <Button text='Book a free 30 minute meeting' full={true} />
           </article>
         </div>
       </section>

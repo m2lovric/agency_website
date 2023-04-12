@@ -58,7 +58,7 @@ const Team = () => {
                 <br />
                 {developer.email}
               </p>
-              <Button text='Book a free meeting' full={true} />
+              <Button text='Book a free meeting' full={true} height='py-3' />
             </article>
           ))}
       </section>
