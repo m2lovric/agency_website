@@ -36,8 +36,8 @@ function App() {
 
   return (
     <Layout>
-      <section className='flex justify-between bg-hero-pattern bg-bottom bg-no-repeat sm:bg-contain sm:flex-col sm:bg-none'>
-        <article className='mt-52 ml-64 sm:mt-16 sm:ml-0 sm:px-10'>
+      <section className='flex justify-between bg-hero-pattern bg-bottom bg-no-repeat sm:bg-contain sm:flex-col-reverse sm:bg-none'>
+        <article className='mt-52 ml-64 sm:mt-8 sm:ml-0 sm:px-10'>
           <h1 className='text-7xl font-bold font-sans sm:text-5xl'>
             We help you grow your{' '}
             <span className='text-primary'>conversions.</span>
@@ -50,7 +50,7 @@ function App() {
         <img
           src={Hero}
           alt='hero'
-          className='mt-16 sm:w-full sm:h-auto sm:mt-36'
+          className='mt-16 sm:mt-3 sm:w-2/3 sm:mx-auto sm:h-auto'
         />
       </section>
 
