@@ -56,18 +56,21 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className='container mx-auto py-44'>
-      <h1 className='font-sans text-5xl font-bold text-center mb-14'>
+    <section className='container mx-auto py-44 sm:px-10'>
+      <h1 className='font-sans text-5xl sm:text-5xl font-bold text-center mb-14'>
         Our testimonials
       </h1>
 
-      <section className='w-full flex flex-col overflow-hidden shadow-2xl py-32 px-48 rounded-2xl'>
-        <section ref={carousel} className='flex w-full h-96 items-center'>
+      <section className='w-full flex flex-col overflow-hidden shadow-2xl py-32 sm:py-10 px-48 sm:px-5 rounded-2xl'>
+        <section
+          ref={carousel}
+          className='flex sm:flex-col w-full h-96 sm:h-auto items-center'
+        >
           <AnimatePresence initial={false}>
             {testimonials.length > 0 && (
               <motion.article
                 key={testimonials[position].id}
-                className='w-10/12 h-full mx-auto flex'
+                className='w-10/12 sm:w-full h-full mx-auto flex sm:flex-col'
                 initial={{
                   x: direction == 1 ? width : -width,
                   display: 'none',
@@ -85,18 +88,18 @@ const Testimonials = () => {
                   opacity: 0,
                 }}
               >
-                <div className='w-3/12 rounded-lg h-80 bg-primary relative'>
+                <div className='w-3/12 sm:h-40 sm:w-full rounded-lg h-80 bg-primary relative'>
                   <img
                     src={QuoteLeft}
                     alt='quote img'
-                    className='absolute -bottom-12 left-6'
+                    className='absolute -bottom-12 left-6 sm:w-3/12 sm:-bottom-4'
                   />
                 </div>
-                <section className='w-9/12 h-full ml-12 flex flex-col justify-between items-start'>
-                  <h2 className='font-semibold font-HG text-3xl leading-relaxed mt-4'>
+                <section className='w-9/12 sm:w-full h-full sm:h-80 ml-12 sm:ml-0 flex flex-col justify-between items-start'>
+                  <h2 className='font-semibold font-HG text-3xl sm:text-xl leading-relaxed mt-4 sm:mt-10'>
                     {testimonials[position].text}
                   </h2>
-                  <p className='font-HG font-light text-xl text-primary mb-10'>
+                  <p className='font-HG font-light text-xl sm:text-lg text-primary mb-10 sm:mb-2'>
                     {`- ${testimonials[position].name} - ${testimonials[position].position}`}
                   </p>
                 </section>
@@ -105,7 +108,7 @@ const Testimonials = () => {
           </AnimatePresence>
         </section>
 
-        <div className='w-2/12 flex justify-around items-center self-end'>
+        <div className='w-2/12 sm:w-full flex justify-around items-center self-end'>
           <button
             className='w-12 h-12 flex justify-center items-center'
             onClick={onLeft}

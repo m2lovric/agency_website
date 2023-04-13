@@ -21,7 +21,7 @@ const Footer = () => {
         </section>
       </ul>
       <section className='flex sm:justify-between sm:mt-10'>
-        <ul className='list-none font-light leading-8'>
+        <ul className='list-none font-light leading-8 sm:w-1/2'>
           <h4 className='font-bold text-2xl mb-6'>Company</h4>
           <li>
             <Link to={'/'}>Home</Link>
@@ -43,7 +43,7 @@ const Footer = () => {
           </li>
         </ul>
 
-        <ul className='list-none font-light ml-36 leading-8 sm:ml-0'>
+        <ul className='list-none font-light ml-36 leading-8 sm:ml-0 sm:w-1/2'>
           <h4 className='font-bold text-2xl mb-6'>Services</h4>
           <li>
             <Link to={'/'}>Digital Marketing</Link>

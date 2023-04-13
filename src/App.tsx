@@ -37,8 +37,8 @@ function App() {
   return (
     <Layout>
       <section className='flex justify-between bg-hero-pattern bg-bottom bg-no-repeat sm:bg-contain sm:flex-col sm:bg-none'>
-        <article className='mt-52 ml-64 sm:mt-16 sm:ml-0 sm:px-5'>
-          <h1 className='text-7xl font-bold font-sans sm:text-6xl'>
+        <article className='mt-52 ml-64 sm:mt-16 sm:ml-0 sm:px-10'>
+          <h1 className='text-7xl font-bold font-sans sm:text-5xl'>
             We help you grow your{' '}
             <span className='text-primary'>conversions.</span>
           </h1>
@@ -50,7 +50,7 @@ function App() {
         <img
           src={Hero}
           alt='hero'
-          className='mt-16 sm:w-full sm:h-auto sm:mt-32'
+          className='mt-16 sm:w-full sm:h-auto sm:mt-36'
         />
       </section>
 
@@ -170,9 +170,9 @@ function App() {
                   data.map((blog) => (
                     <motion.article
                       key={blog.id}
-                      className='bg-secondary rounded-xl px-12 py-14 mr-8 font-HG'
+                      className='bg-secondary rounded-xl px-12 sm:px-8 py-14 mr-8 font-HG'
                     >
-                      <h2 className='font-bold text-5xl w-96 leading-tight'>
+                      <h2 className='font-bold text-5xl w-96 sm:w-72 leading-tight'>
                         {blog.title}
                       </h2>
                       <p className='font-light my-5'>{blog.text}</p>
