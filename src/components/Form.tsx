@@ -49,10 +49,11 @@ const Form = () => {
             placeholder='Subject'
             className='border border-soft-gray py-5 px-8 w-full font-sans text-base rounded-xl'
           />
+          //Value and onchange used just to remove warning
           <textarea
             placeholder='Message'
-            cols={30}
-            rows={10}
+            value='Message'
+            onChange={() => 'Message'}
             className='w-full h-full border placeholder:text-soft-gray border-soft-gray py-5 px-8 font-sans text-base rounded-xl'
           >
             Message
