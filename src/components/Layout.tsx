@@ -8,7 +8,7 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className='w-full'>
+    <div className='w-full sm:overflow-hidden'>
       <Nav />
       <main>{children}</main>
       <WhyLogo />

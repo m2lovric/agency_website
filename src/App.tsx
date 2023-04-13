@@ -36,29 +36,34 @@ function App() {
 
   return (
     <Layout>
-      <section className='flex justify-between bg-hero-pattern bg-bottom bg-no-repeat'>
-        <article className='mt-52 ml-64'>
-          <h1 className='text-7xl font-bold font-sans'>
-            We help you grow
-            <br />
-            your <span className='text-primary'>conversions.</span>
+      <section className='flex justify-between bg-hero-pattern bg-bottom bg-no-repeat sm:bg-contain sm:flex-col sm:bg-none'>
+        <article className='mt-52 ml-64 sm:mt-16 sm:ml-0 sm:px-5'>
+          <h1 className='text-7xl font-bold font-sans sm:text-6xl'>
+            We help you grow your{' '}
+            <span className='text-primary'>conversions.</span>
           </h1>
-          <p className='text-2xl font-HG leading-10 my-6'>
+          <p className='text-xl font-HG leading-10 my-6 sm:my-10'>
             Featured in leading publications around the world
           </p>
           <Button text='Contact Us' full={false} />
         </article>
-        <img src={Hero} alt='hero' className='mt-16' />
+        <img
+          src={Hero}
+          alt='hero'
+          className='mt-16 sm:w-full sm:h-auto sm:mt-32'
+        />
       </section>
 
-      <section className='container mx-auto flex flex-col'>
-        <h1 className='font-sans text-5xl font-bold text-center mt-72 mb-14'>
+      <section className='container mx-auto flex flex-col px-10'>
+        <h1 className='font-sans text-5xl font-bold text-center mt-72 sm:mt-28 mb-14 sm:pb-32'>
           How it works
         </h1>
-        <article className='home-article self-start relative before:content-["01"] number-before'>
+        <article className='home-article self-start sm:self-center relative before:content-["01"] number-before'>
           <img src={Goal} alt='' />
-          <div className='ml-16'>
-            <h2 className='font-sans font-bold text-3xl text-primary'>Goal</h2>
+          <div className='ml-16 sm:ml-0'>
+            <h2 className='font-sans font-bold text-3xl text-primary sm:text-4xl sm:py-5'>
+              Goal
+            </h2>
             <p>
               To help your company grow, we want to understand your goals. With
               that, we can provide you with a complete road map towards
@@ -66,10 +71,10 @@ function App() {
             </p>
           </div>
         </article>
-        <article className='home-article self-end relative after:content-["02"] number-after'>
+        <article className='home-article self-end sm:self-center relative after:content-["02"] number-after'>
           <img src={Competitors} alt='' />
-          <div className='ml-16'>
-            <h2 className='font-sans font-bold text-3xl text-primary'>
+          <div className='ml-16 sm:ml-0'>
+            <h2 className='font-sans font-bold text-3xl sm:text-4xl text-primary sm:py-5'>
               Competitors
             </h2>
             <p>
@@ -80,10 +85,10 @@ function App() {
             </p>
           </div>
         </article>
-        <article className='home-article self-start relative before:content-["03"] number-before'>
+        <article className='home-article self-start sm:self-center relative before:content-["03"] number-before'>
           <img src={Strategy} alt='' />
-          <div className='ml-16'>
-            <h2 className='font-sans font-bold text-3xl text-primary'>
+          <div className='ml-16 sm:ml-0'>
+            <h2 className='font-sans font-bold text-3xl sm:text-4xl text-primary sm:py-5'>
               Strategy
             </h2>
             <p>
@@ -94,10 +99,10 @@ function App() {
             </p>
           </div>
         </article>
-        <article className='home-article self-end relative after:content-["04"] number-after'>
+        <article className='home-article self-end sm:self-center relative after:content-["04"] number-after'>
           <img src={Launch} alt='' />
-          <div className='ml-16'>
-            <h2 className='font-sans font-bold text-3xl text-primary'>
+          <div className='ml-16 sm:ml-0'>
+            <h2 className='font-sans font-bold text-3xl sm:text-4xl text-primary sm:py-5'>
               Launch
             </h2>
             <p>
@@ -110,23 +115,23 @@ function App() {
         </article>
       </section>
 
-      <section className='bg-primary text-white py-60 mt-8 font-HG'>
-        <div className='container mx-auto flex items-center'>
-          <article>
+      <section className='bg-primary text-white py-60 sm:py-20 mt-8 font-HG'>
+        <div className='container mx-auto flex items-center sm:flex-col'>
+          <article className='sm:w-full sm:p-10'>
             <Line />
-            <h1 className='font-sans font-bold text-6xl'>
+            <h1 className='font-sans font-bold text-6xl sm:text-5xl'>
               Book A Free Digital
               <br />
               Marketing Consultation
             </h1>
           </article>
-          <form className='flex flex-col justify-center items-end w-1/2'>
+          <form className='flex flex-col justify-center items-end w-1/2 sm:w-full sm:p-10'>
             <input
               type='email'
               placeholder='Your Email'
-              className='bg-white mb-2 w-5/6 py-6 px-10 rounded-full text-xl font-light text-black text-opacity-50'
+              className='bg-white mb-2 w-5/6 sm:w-full py-6 px-10 rounded-full sm:rounded-xl text-xl font-light text-black text-opacity-50'
             />
-            <button className='bg-soft-brown mt-2 text-white w-5/6 py-6 px-10 rounded-full text-xl font-bold'>
+            <button className='bg-soft-brown mt-2 text-white w-5/6 sm:w-full  py-6 px-10 rounded-full sm:rounded-xl text-xl font-bold'>
               Book my free meeting
             </button>
           </form>
@@ -135,18 +140,21 @@ function App() {
 
       <Testimonials />
 
-      <section className='bg-primary text-white py-60 mt-8 font-HG'>
-        <div className='container mx-auto flex items-center'>
-          <article className='w-5/12 '>
+      <section className='bg-primary text-white py-60 sm:py-20 mt-8 font-HG'>
+        <div className='container mx-auto flex items-center sm:flex-col'>
+          <article className='w-5/12 sm:w-full sm:p-10'>
             <Line />
-            <h1 className='font-sans font-bold text-6xl leading-normal'>
+            <h1 className='font-sans font-bold text-6xl leading-normal sm:text-5xl'>
               Digital Marketing
               <br />
               Articles
             </h1>
           </article>
           {data.length > 0 && (
-            <motion.section ref={slider} className='overflow-hidden w-7/12'>
+            <motion.section
+              ref={slider}
+              className='overflow-hidden w-7/12 sm:w-full sm:px-10'
+            >
               <motion.section
                 drag='x'
                 dragConstraints={{ right: 0, left: width && -width }}
@@ -176,6 +184,9 @@ function App() {
               </motion.section>
             </motion.section>
           )}
+          <p className='md:hidden text-center font-HG mt-4 text-xl animate-bounce'>
+            Slider {'>>'}{' '}
+          </p>
         </div>
       </section>
     </Layout>

@@ -3,7 +3,7 @@ import { Facebook, Instagram, LinkedIn, Twitter } from '../images';
 
 const Footer = () => {
   return (
-    <footer className='py-32 px-72 bg-primary font-HG flex justify-between'>
+    <footer className='py-32 px-72 sm:py-16 sm:px-10 bg-primary font-HG flex sm:flex-col justify-between'>
       <ul className='list-none font-light leading-8'>
         <Link to={'/'} className='font-HG font-bold text-2xl'>
           LOGO
@@ -13,14 +13,14 @@ const Footer = () => {
         <li>Lunar Holding LDA</li>
         <li>info@logo.io</li>
         <li>+000-01234567</li>
-        <section className='flex justify-between mt-8 items-center'>
+        <section className='flex justify-between mt-8 items-center sm:hidden'>
           <img src={Facebook} alt='Facebook' />
           <img src={Twitter} alt='Twitter' />
           <img src={LinkedIn} alt='LinkedIn' />
           <img src={Instagram} alt='Instagram' />
         </section>
       </ul>
-      <section className='flex'>
+      <section className='flex sm:justify-between sm:mt-10'>
         <ul className='list-none font-light leading-8'>
           <h4 className='font-bold text-2xl mb-6'>Company</h4>
           <li>
@@ -43,7 +43,7 @@ const Footer = () => {
           </li>
         </ul>
 
-        <ul className='list-none font-light ml-36 leading-8'>
+        <ul className='list-none font-light ml-36 leading-8 sm:ml-0'>
           <h4 className='font-bold text-2xl mb-6'>Services</h4>
           <li>
             <Link to={'/'}>Digital Marketing</Link>
@@ -67,6 +67,12 @@ const Footer = () => {
             <Link to={'/'}>Website & SEO</Link>
           </li>
         </ul>
+      </section>
+      <section className=' w-full h-8 flex justify-between mt-8 items-center md:hidden'>
+        <img src={Facebook} alt='Facebook' />
+        <img src={Twitter} alt='Twitter' />
+        <img src={LinkedIn} alt='LinkedIn' />
+        <img src={Instagram} alt='Instagram' />
       </section>
     </footer>
   );

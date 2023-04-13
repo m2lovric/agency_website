@@ -3,12 +3,12 @@ import LinkBorder from './LinkBorder';
 
 const Nav = () => {
   return (
-    <nav className='h-24 w-full shadow-lg'>
+    <nav className='h-24 w-full shadow-lg sm:px-5'>
       <section className='container mx-auto h-full flex justify-between items-center '>
         <Link to={'/'} className='font-HG font-bold text-2xl'>
           LOGO
         </Link>
-        <section className='flex items-center justify-between w-1/2 text-lg font-semibold font-HG'>
+        <section className='flex items-center justify-between w-1/2 text-lg font-semibold font-HG sm:hidden'>
           <Link to={'/services'} className='relative group'>
             Services
             <LinkBorder />

@@ -4,7 +4,7 @@
 
 @layer components {
   .home-article {
-    @apply w-9/12 rounded-xl font-HG text-lg flex items-center shadow-2xl my-4 px-16 py-5
+    @apply w-9/12 sm:w-full rounded-xl font-HG text-lg flex items-center shadow-2xl my-20 px-16 py-5 sm:px-6 sm:flex-col
   }
 }
 
