@@ -21,8 +21,8 @@ const Services = () => {
         url={ServicesHero}
         button={true}
       />
-      <section className='container mx-auto flex'>
-        <div className='w-1/2 p-6 flex flex-col gap-10'>
+      <section className='container mx-auto flex sm:flex-col'>
+        <div className='w-1/2 sm:w-full p-6 sm:px-10 flex flex-col gap-10'>
           <article className='p-16 shadow-2xl rounded-xl'>
             <img src={ServicesFacebook} alt='' />
             <h3 className='font-sans font-bold text-2xl my-6'>
@@ -57,7 +57,7 @@ const Services = () => {
           </article>
         </div>
 
-        <div className='w-1/2 p-6 mt-20 pb-48 flex flex-col gap-10'>
+        <div className='w-1/2 sm:w-full p-6 sm:px-10 mt-20 pb-48 flex flex-col gap-10'>
           <article className='p-16 shadow-2xl rounded-xl'>
             <img src={ServicesSearch} alt='' />
             <h3 className='font-sans font-bold text-2xl my-6'>
@@ -92,7 +92,7 @@ const Services = () => {
       </section>
 
       <section className='text-center bg-primary'>
-        <section className='container mx-auto py-28'>
+        <section className='container mx-auto py-28 sm:px-10'>
           <h1 className='font-sans font-bold text-4xl text-white mb-10'>
             What Happens When I Hire Lunar Strategy?
           </h1>
