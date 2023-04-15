@@ -1,28 +1,20 @@
-import React from 'react';
 import Layout from '../components/Layout';
 import Form from '../components/Form';
 import Button from '../components/Button';
 import { AboutHero, AboutProduct, AboutSolution } from '../images';
+import HeaderImg from '../components/HeaderImg';
 
 const About = () => {
   return (
     <Layout>
-      <section className='flex justify-between bg-hero-pattern bg-bottom bg-no-repeat'>
-        <article className='mt-52 ml-64'>
-          <h1 className='text-7xl font-bold font-sans'>
-            Consistency - Drive -
-            <br />
-            Curiosity - Passion​
-          </h1>
-          <p className='text-2xl font-HG leading-10 my-6'>
-            In a constantly evolving and competitive digital world, it is
+      <HeaderImg
+        title='Consistency - Drive - Curiosity - Passion​'
+        subtitle='In a constantly evolving and competitive digital world, it is
             imperative to stay on top and in the know, be highly visible among
-            search results and feeds, and be responsive to your audience.
-          </p>
-          <Button text='Contact Us' full={false} />
-        </article>
-        <img src={AboutHero} alt='hero' className='mt-16' />
-      </section>
+            search results and feeds, and be responsive to your audience.'
+        url={AboutHero}
+        button={false}
+      />
 
       <section className='container mx-auto flex flex-col'>
         <h1 className='font-sans text-5xl font-bold text-center mt-72 mb-14'>

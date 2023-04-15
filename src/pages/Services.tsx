@@ -1,5 +1,6 @@
 import Button from '../components/Button';
 import Form from '../components/Form';
+import HeaderImg from '../components/HeaderImg';
 import Layout from '../components/Layout';
 import {
   ServicesHero,
@@ -12,19 +13,14 @@ import {
 const Services = () => {
   return (
     <Layout>
-      <section className='flex justify-between bg-hero-pattern bg-bottom bg-no-repeat'>
-        <article className='mt-52 ml-64'>
-          <h1 className='text-7xl font-bold font-sans'>Services</h1>
-          <p className='text-2xl font-HG leading-10 my-6'>
-            All our digital marketing services start with a free 30-minute
+      <HeaderImg
+        title='Services'
+        subtitle='All our digital marketing services start with a free 30-minute
             consultation call where we find the best strategy towards reaching
-            your goals.
-          </p>
-          <Button text='Contact Us' full={false} />
-        </article>
-        <img src={ServicesHero} alt='hero' className='mt-16' />
-      </section>
-
+            your goals.'
+        url={ServicesHero}
+        button={true}
+      />
       <section className='container mx-auto flex'>
         <div className='w-1/2 p-6 flex flex-col gap-10'>
           <article className='p-16 shadow-2xl rounded-xl'>

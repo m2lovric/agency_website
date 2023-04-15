@@ -1,11 +1,10 @@
 import Layout from './components/Layout';
-import Button from './components/Button';
 import { Competitors, Goal, Launch, Strategy, Hero, Marketing } from './images';
 import Line from './components/Line';
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import WhyLogo from './components/WhyLogo';
 import Testimonials from './components/Testimonials';
+import HeaderImg from './components/HeaderImg';
 
 interface Blog {
   id: number;
@@ -36,23 +35,13 @@ function App() {
 
   return (
     <Layout>
-      <section className='flex justify-between bg-hero-pattern bg-bottom bg-no-repeat sm:bg-contain sm:flex-col-reverse sm:bg-none'>
-        <article className='mt-52 ml-64 sm:mt-8 sm:ml-0 sm:px-10'>
-          <h1 className='text-7xl font-bold font-sans sm:text-5xl'>
-            We help you grow your{' '}
-            <span className='text-primary'>conversions.</span>
-          </h1>
-          <p className='text-xl font-HG leading-10 my-6 sm:my-10'>
-            Featured in leading publications around the world
-          </p>
-          <Button text='Contact Us' full={false} />
-        </article>
-        <img
-          src={Hero}
-          alt='hero'
-          className='mt-16 sm:mt-3 sm:w-2/3 sm:mx-auto sm:h-auto'
-        />
-      </section>
+      <HeaderImg
+        title='We help you grow your'
+        gold='conversions.'
+        subtitle='Featured in leading publications around the world'
+        url={Hero}
+        button={true}
+      />
 
       <section className='container mx-auto flex flex-col px-10'>
         <h1 className='font-sans text-5xl font-bold text-center mt-72 sm:mt-28 mb-14 sm:pb-32'>

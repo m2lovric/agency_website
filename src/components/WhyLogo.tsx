@@ -5,7 +5,7 @@ import Button from './Button';
 const WhyLogo = () => {
   return (
     <section className='flex sm:flex-col-reverse pb-20 sm:pb-0 justify-between w-full sm:px-10 sm:py-20'>
-      <article className='mt-52 ml-64 sm:mt-0 sm:ml-0'>
+      <article className='mt-52 ml-64 sm:mt-0 sm:mb-20 sm:ml-0'>
         <h1 className='text-5xl font-bold font-sans sm:text-center'>
           Why Logo Agency?
         </h1>
