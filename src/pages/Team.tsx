@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
 import Button from '../components/Button';
+import Header from '../components/Header';
 
 interface Specialist {
   id: number;
@@ -27,20 +28,16 @@ const Team = () => {
   }, []);
   return (
     <Layout>
-      <section className='flex justify-between bg-hero-pattern bg-bottom bg-no-repeat'>
-        <article className='container mx-auto py-64'>
-          <h1 className='text-7xl font-bold font-sans'>Logo Specialists</h1>
-          <p className='text-2xl text-primary font-HG leading-10 my-6'>
-            Meet the awesome team behind Lunar Strategy.
-          </p>
-        </article>
-      </section>
-      <section className='container mx-auto w-full flex flex-wrap justify-between'>
+      <Header
+        title='Logo Specialists'
+        subtitle='Meet the awesome team behind Lunar Strategy.'
+      />
+      <section className='container mx-auto w-full flex flex-wrap justify-between sm:px-10'>
         {team.length > 0 &&
           team.map((developer) => (
             <article
               key={developer.id}
-              className='flex flex-col items-center basis-30p px-10 py-14 rounded-2xl bg-white shadow-2xl mt-10'
+              className='flex flex-col items-center basis-30p sm:basis-full px-10 py-14 rounded-2xl bg-white shadow-2xl mt-10'
             >
               <div className='w-32 h-32 rounded-full border-4 border-primary'>
                 <img

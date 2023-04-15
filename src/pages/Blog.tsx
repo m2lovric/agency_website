@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
 import Button from '../components/Button';
+import Header from '../components/Header';
 
 interface Blog {
   id: number;
@@ -24,20 +25,13 @@ const Blog = () => {
 
   return (
     <Layout>
-      <section className='flex justify-between bg-hero-pattern bg-bottom bg-no-repeat'>
-        <article className='container mx-auto py-64'>
-          <h1 className='text-7xl font-bold font-sans'>Logo Blog</h1>
-          <p className='text-2xl text-primary font-HG leading-10 my-6'>
-            Digital Marketing Articles
-          </p>
-        </article>
-      </section>
-      <section className='container mx-auto w-full flex flex-wrap justify-between'>
+      <Header title='Logo Blog' subtitle='Digital Marketing Articles' />
+      <section className='container mx-auto w-full flex flex-wrap justify-between sm:px-10'>
         {blogs.length > 0 &&
           blogs.map((blog) => (
             <article
               key={blog.id}
-              className='basis-30p px-9 pt-14 pb-10 rounded-2xl bg-white shadow-2xl mt-10'
+              className='basis-30p sm:basis-full px-9 pt-14 pb-10 rounded-2xl bg-white shadow-2xl mt-10'
             >
               <h2 className='font-sans font-bold text-3xl'>{blog.title}</h2>
               <p className='font-HG font-light text-lg pt-7 pb-14 ml-0'>
