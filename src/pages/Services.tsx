@@ -21,10 +21,10 @@ const Services = () => {
         url={ServicesHero}
         button={true}
       />
-      <section className='container mx-auto flex sm:flex-col'>
+      <section className='container mx-auto flex sm:flex-col sm:mt-40'>
         <div className='w-1/2 sm:w-full p-6 sm:px-10 flex flex-col gap-10'>
-          <article className='p-16 shadow-2xl rounded-xl'>
-            <img src={ServicesFacebook} alt='' />
+          <article className='p-16 sm:p-5 sm:flex sm:flex-col sm:text-center shadow-2xl rounded-xl sm:items-center'>
+            <img src={ServicesFacebook} alt='' className='sm:w-24 sm:h-auto' />
             <h3 className='font-sans font-bold text-2xl my-6'>
               Facebook Marketing
             </h3>
@@ -39,8 +39,8 @@ const Services = () => {
             </p>
             <Button text='Book a free 30 minute meeting' full={true} />
           </article>
-          <article className='p-16 shadow-2xl rounded-xl'>
-            <img src={ServicesGoogle} alt='' />
+          <article className='p-16 sm:p-5 sm:flex sm:flex-col sm:text-center shadow-2xl rounded-xl sm:items-center'>
+            <img src={ServicesGoogle} alt='' className='sm:w-24 sm:h-auto' />
             <h3 className='font-sans font-bold text-2xl my-6'>
               Google Marketing
             </h3>
@@ -58,8 +58,8 @@ const Services = () => {
         </div>
 
         <div className='w-1/2 sm:w-full p-6 sm:px-10 mt-20 pb-48 flex flex-col gap-10'>
-          <article className='p-16 shadow-2xl rounded-xl'>
-            <img src={ServicesSearch} alt='' />
+          <article className='p-16 sm:p-5 sm:flex sm:flex-col sm:text-center shadow-2xl rounded-xl sm:items-center'>
+            <img src={ServicesSearch} alt='' className='sm:w-24 sm:h-auto' />
             <h3 className='font-sans font-bold text-2xl my-6'>
               Search Engine Optimization
             </h3>
@@ -73,8 +73,8 @@ const Services = () => {
             </p>
             <Button text='Book a free 30 minute meeting' full={true} />
           </article>
-          <article className='p-16 shadow-2xl rounded-xl'>
-            <img src={ServicesContent} alt='' />
+          <article className='p-16 sm:p-5 sm:flex sm:flex-col sm:text-center shadow-2xl rounded-xl sm:items-center'>
+            <img src={ServicesContent} alt='' className='sm:w-24 sm:h-auto' />
             <h3 className='font-sans font-bold text-2xl my-6'>Web Content</h3>
             <p className='font-HG font-medium text-lg text-black text-opacity-70 my-6'>
               Do you need a content update on your site? Perhaps you are adding
