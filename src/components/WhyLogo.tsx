@@ -9,7 +9,7 @@ const WhyLogo = () => {
         <h1 className='text-5xl font-bold font-sans sm:text-center'>
           Why Logo Agency?
         </h1>
-        <p className='text-xl text-black font-HG leading-10 my-6 text-opacity-70'>
+        <p className='text-xl text-center text-black font-HG leading-10 my-6 text-opacity-70'>
           To get customers, it's imperative to be seen by the mass. Every
           successful company is unique and needs contrasting digital marketing
           strategies. Book a meeting with us and we will help you find the

@@ -24,6 +24,17 @@ import AboutHero from './assets/about/AboutHero.png';
 import AboutProduct from './assets/about/AboutProduct.png';
 import AboutSolution from './assets/about/AboutSolution.png';
 
+import IndustriesHero from './assets/industries/IndustriesHero.png';
+import IndustriesSaas from './assets/industries/saas.png';
+import IndustriesBook from './assets/industries/book.png';
+import IndustriesB2b from './assets/industries/b2b.png';
+import IndustriesEcommerce from './assets/industries/e-commerce-solution.png';
+import IndustriesCompany1 from './assets/industries/company1.png';
+import IndustriesCompany2 from './assets/industries/company2.png';
+import IndustriesCompany3 from './assets/industries/company3.png';
+import IndustriesCompany4 from './assets/industries/company4.png';
+import IndustriesCompany5 from './assets/industries/company5.png';
+
 export {
   Competitors,
   Goal,
@@ -48,4 +59,14 @@ export {
   AboutHero,
   AboutProduct,
   AboutSolution,
+  IndustriesHero,
+  IndustriesB2b,
+  IndustriesSaas,
+  IndustriesBook,
+  IndustriesEcommerce,
+  IndustriesCompany1,
+  IndustriesCompany2,
+  IndustriesCompany3,
+  IndustriesCompany4,
+  IndustriesCompany5,
 };

@@ -4,6 +4,7 @@ import Services from './pages/Services';
 import Blog from './pages/Blog';
 import About from './pages/About';
 import Team from './pages/Team';
+import Industries from './pages/Industries';
 
 export const router = createBrowserRouter([
   {
@@ -25,5 +26,9 @@ export const router = createBrowserRouter([
   {
     path: '/team',
     element: <Team />,
+  },
+  {
+    path: '/industries',
+    element: <Industries />,
   },
 ]);
