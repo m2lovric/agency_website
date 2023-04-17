@@ -1,10 +1,21 @@
 import { Link } from 'react-router-dom';
 import LinkBorder from './LinkBorder';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { AnimatePresence, easeInOut, motion } from 'framer-motion';
 
 const Nav = () => {
   const [clicked, setClicked] = useState(false);
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWidth(window.innerWidth);
+      console.log(width);
+    };
+
+    window.addEventListener('resize', handleWindowResize);
+  }, [window.window.innerWidth]);
+
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
 
   return (
@@ -13,7 +24,7 @@ const Nav = () => {
         <Link to={'/'} className='font-HG font-bold text-2xl'>
           LOGO
         </Link>
-        {window.window.outerWidth < 640 && (
+        {width < 640 && (
           <button
             className='flex flex-col h-12 w-12 rounded justify-center items-center group'
             onClick={() => setClicked(!clicked)}
@@ -39,10 +50,11 @@ const Nav = () => {
             />
           </button>
         )}
-        {window.window.outerWidth < 640 ? (
+        {width < 640 ? (
           clicked && (
             <AnimatePresence initial={true}>
               <motion.section
+                key='menu'
                 className='flex items-center justify-between z-10 w-1/2 text-lg font-semibold font-HG sm:absolute sm:top-28 sm:w-full sm:rounded-2xl sm:shadow-2xl sm:gap-5 sm:items-center sm:py-10 sm:bg-white sm:flex-col'
                 initial={{
                   y: -200,
