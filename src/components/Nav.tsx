@@ -14,7 +14,7 @@ const Nav = () => {
     };
 
     window.addEventListener('resize', handleWindowResize);
-  }, [window.window.innerWidth]);
+  }, []);
 
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
 
