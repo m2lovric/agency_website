@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import LinkBorder from './LinkBorder';
 import { useState, useEffect } from 'react';
-import { AnimatePresence, easeInOut, motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const Nav = () => {
   const [clicked, setClicked] = useState(false);
@@ -19,20 +19,20 @@ const Nav = () => {
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
 
   return (
-    <nav className='h-24 sm:flex w-full shadow-lg sm:px-10 z-20'>
-      <section className='container mx-auto h-full flex justify-between items-center sm:relative'>
-        <Link to={'/'} className='font-HG font-bold text-2xl'>
+    <nav className='z-20 h-24 w-full shadow-lg sm:flex sm:px-10'>
+      <section className='container mx-auto flex h-full items-center justify-between sm:relative'>
+        <Link to={'/'} className='font-HG text-2xl font-bold'>
           LOGO
         </Link>
         {width < 640 && (
           <button
-            className='flex flex-col h-12 w-12 rounded justify-center items-center group'
+            className='group flex h-12 w-12 flex-col items-center justify-center rounded'
             onClick={() => setClicked(!clicked)}
           >
             <div
               className={`${genericHamburgerLine} ${
                 clicked
-                  ? 'rotate-45 translate-y-3 opacity-50 group-hover:opacity-100'
+                  ? 'translate-y-3 rotate-45 opacity-50 group-hover:opacity-100'
                   : 'opacity-50 group-hover:opacity-100'
               }`}
             />
@@ -44,7 +44,7 @@ const Nav = () => {
             <div
               className={`${genericHamburgerLine} ${
                 clicked
-                  ? '-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100'
+                  ? '-translate-y-3 -rotate-45 opacity-50 group-hover:opacity-100'
                   : 'opacity-50 group-hover:opacity-100'
               }`}
             />
@@ -55,7 +55,7 @@ const Nav = () => {
             <AnimatePresence initial={true}>
               <motion.section
                 key='menu'
-                className='flex items-center justify-between z-10 w-1/2 text-lg font-semibold font-HG sm:absolute sm:top-28 sm:w-full sm:rounded-2xl sm:shadow-2xl sm:gap-5 sm:items-center sm:py-10 sm:bg-white sm:flex-col'
+                className='z-10 flex w-1/2 items-center justify-between font-HG text-lg font-semibold sm:absolute sm:top-28 sm:w-full sm:flex-col sm:items-center sm:gap-5 sm:rounded-2xl sm:bg-white sm:py-10 sm:shadow-2xl'
                 initial={{
                   y: -200,
                   display: 'none',
@@ -70,64 +70,64 @@ const Nav = () => {
                   display: 'none',
                 }}
               >
-                <Link to={'/services'} className='relative group'>
+                <Link to={'/services'} className='group relative'>
                   Services
                   <LinkBorder />
                 </Link>
-                <Link to={'/industries'} className='relative group'>
+                <Link to={'/industries'} className='group relative'>
                   Industries
                   <LinkBorder />
                 </Link>
-                <Link to={'/about'} className='relative group'>
+                <Link to={'/about'} className='group relative'>
                   About Us
                   <LinkBorder />
                 </Link>
-                <Link to={'/team'} className='relative group'>
+                <Link to={'/team'} className='group relative'>
                   Team Agency
                   <LinkBorder />
                 </Link>
-                <Link to={'/blog'} className='relative group'>
+                <Link to={'/blog'} className='group relative'>
                   Blog
                   <LinkBorder />
                 </Link>
                 <Link
                   to={'/contact'}
-                  className='text-primary relative group border border-primary bg-transparent py-2 px-6 rounded-full hover:text-white'
+                  className='group relative rounded-full border border-primary bg-transparent px-6 py-2 text-primary hover:text-white'
                 >
                   Contact Us
-                  <div className='bg-primary w-0 h-full opacity-0 absolute top-0 left-0 rounded-full -z-10 transition-all ease-in-out duration-300 group-hover:w-full group-hover:opacity-100'></div>
+                  <div className='absolute left-0 top-0 -z-10 h-full w-0 rounded-full bg-primary opacity-0 transition-all duration-300 ease-in-out group-hover:w-full group-hover:opacity-100'></div>
                 </Link>
               </motion.section>
             </AnimatePresence>
           )
         ) : (
-          <section className='flex items-center justify-between z-10 w-1/2 text-lg font-semibold font-HG sm:absolute sm:top-28 sm:w-full sm:rounded-2xl sm:shadow-2xl sm:gap-5 sm:items-center sm:py-10 sm:bg-white sm:flex-col'>
-            <Link to={'/services'} className='relative group'>
+          <section className='z-10 flex w-1/2 items-center justify-between font-HG text-lg font-semibold sm:absolute sm:top-28 sm:w-full sm:flex-col sm:items-center sm:gap-5 sm:rounded-2xl sm:bg-white sm:py-10 sm:shadow-2xl'>
+            <Link to={'/services'} className='group relative'>
               Services
               <LinkBorder />
             </Link>
-            <Link to={'/industries'} className='relative group'>
+            <Link to={'/industries'} className='group relative'>
               Industries
               <LinkBorder />
             </Link>
-            <Link to={'/about'} className='relative group'>
+            <Link to={'/about'} className='group relative'>
               About Us
               <LinkBorder />
             </Link>
-            <Link to={'/team'} className='relative group'>
+            <Link to={'/team'} className='group relative'>
               Team Agency
               <LinkBorder />
             </Link>
-            <Link to={'/blog'} className='relative group'>
+            <Link to={'/blog'} className='group relative'>
               Blog
               <LinkBorder />
             </Link>
             <Link
               to={'/contact'}
-              className='text-primary relative group border border-primary bg-transparent py-2 px-6 rounded-full hover:text-white'
+              className='group relative rounded-full border border-primary bg-transparent px-6 py-2 text-primary hover:text-white'
             >
               Contact Us
-              <div className='bg-primary w-0 h-full opacity-0 absolute top-0 left-0 rounded-full -z-10 transition-all ease-in-out duration-300 group-hover:w-full group-hover:opacity-100'></div>
+              <div className='absolute left-0 top-0 -z-10 h-full w-0 rounded-full bg-primary opacity-0 transition-all duration-300 ease-in-out group-hover:w-full group-hover:opacity-100'></div>
             </Link>
           </section>
         )}

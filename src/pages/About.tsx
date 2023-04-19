@@ -17,7 +17,7 @@ const About = () => {
       />
 
       <section className='container mx-auto flex flex-col'>
-        <h1 className='font-sans text-5xl font-bold text-center mt-72 mb-14'>
+        <h1 className='mb-14 mt-72 text-center font-sans text-5xl font-bold'>
           Make a Difference For Your Business!
         </h1>
         <section className='flex justify-between'>

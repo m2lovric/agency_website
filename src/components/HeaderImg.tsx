@@ -16,18 +16,18 @@ const HeaderImg = ({
   button,
 }: HeaderImgInterface) => {
   return (
-    <section className='flex justify-between bg-hero-pattern bg-bottom bg-no-repeat sm:bg-contain sm:flex-col-reverse sm:bg-none'>
-      <article className='mt-52 ml-64 sm:mt-8 sm:ml-0 sm:px-10'>
-        <h1 className='text-7xl font-bold font-sans sm:text-5xl'>
+    <section className='flex justify-between bg-hero-pattern bg-bottom bg-no-repeat sm:flex-col-reverse sm:bg-none sm:bg-contain'>
+      <article className='ml-64 mt-52 sm:ml-0 sm:mt-8 sm:px-10'>
+        <h1 className='font-sans text-7xl font-bold sm:text-5xl'>
           {title} {gold && <span className='text-primary'> {gold}</span>}
         </h1>
-        <p className='text-2xl font-HG leading-10 my-6 sm:my-10'>{subtitle}</p>
+        <p className='my-6 font-HG text-2xl leading-10 sm:my-10'>{subtitle}</p>
         {button && <Button text='Contact Us' full={false} />}
       </article>
       <img
         src={url}
         alt='hero'
-        className='mt-16 sm:mt-3 sm:w-2/3 sm:mx-auto sm:h-auto'
+        className='mt-16 sm:mx-auto sm:mt-3 sm:h-auto sm:w-2/3'
       />
     </section>
   );

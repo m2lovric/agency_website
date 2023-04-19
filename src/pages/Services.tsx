@@ -21,14 +21,14 @@ const Services = () => {
         url={ServicesHero}
         button={true}
       />
-      <section className='container mx-auto flex sm:flex-col sm:mt-40'>
-        <div className='w-1/2 sm:w-full p-6 sm:px-10 flex flex-col gap-10'>
-          <article className='p-16 sm:p-5 sm:flex sm:flex-col sm:text-center shadow-2xl rounded-xl sm:items-center'>
-            <img src={ServicesFacebook} alt='' className='sm:w-24 sm:h-auto' />
-            <h3 className='font-sans font-bold text-2xl my-6'>
+      <section className='container mx-auto flex sm:mt-40 sm:flex-col'>
+        <div className='flex w-1/2 flex-col gap-10 p-6 sm:w-full sm:px-10'>
+          <article className='rounded-xl p-16 shadow-2xl sm:flex sm:flex-col sm:items-center sm:p-5 sm:text-center'>
+            <img src={ServicesFacebook} alt='' className='sm:h-auto sm:w-24' />
+            <h3 className='my-6 font-sans text-2xl font-bold'>
               Facebook Marketing
             </h3>
-            <p className='font-HG font-medium text-lg text-black text-opacity-70 my-6'>
+            <p className='my-6 font-HG text-lg font-medium text-black text-opacity-70'>
               Facebook Marketing is a simple, yet powerful marketing platform
               that allows businesses to market their products and services
               through the biggest social media platforms (including Instagram as
@@ -39,12 +39,12 @@ const Services = () => {
             </p>
             <Button text='Book a free 30 minute meeting' full={true} />
           </article>
-          <article className='p-16 sm:p-5 sm:flex sm:flex-col sm:text-center shadow-2xl rounded-xl sm:items-center'>
-            <img src={ServicesGoogle} alt='' className='sm:w-24 sm:h-auto' />
-            <h3 className='font-sans font-bold text-2xl my-6'>
+          <article className='rounded-xl p-16 shadow-2xl sm:flex sm:flex-col sm:items-center sm:p-5 sm:text-center'>
+            <img src={ServicesGoogle} alt='' className='sm:h-auto sm:w-24' />
+            <h3 className='my-6 font-sans text-2xl font-bold'>
               Google Marketing
             </h3>
-            <p className='font-HG font-medium text-lg text-black text-opacity-70 my-6'>
+            <p className='my-6 font-HG text-lg font-medium text-black text-opacity-70'>
               Google gets over 3.5 billion searches per day and with Google Ads
               you increase your visability significantly. It is the platform
               that allows you to drive qualitative traffic and good-fit
@@ -57,13 +57,13 @@ const Services = () => {
           </article>
         </div>
 
-        <div className='w-1/2 sm:w-full p-6 sm:px-10 mt-20 pb-48 flex flex-col gap-10'>
-          <article className='p-16 sm:p-5 sm:flex sm:flex-col sm:text-center shadow-2xl rounded-xl sm:items-center'>
-            <img src={ServicesSearch} alt='' className='sm:w-24 sm:h-auto' />
-            <h3 className='font-sans font-bold text-2xl my-6'>
+        <div className='mt-20 flex w-1/2 flex-col gap-10 p-6 pb-48 sm:w-full sm:px-10'>
+          <article className='rounded-xl p-16 shadow-2xl sm:flex sm:flex-col sm:items-center sm:p-5 sm:text-center'>
+            <img src={ServicesSearch} alt='' className='sm:h-auto sm:w-24' />
+            <h3 className='my-6 font-sans text-2xl font-bold'>
               Search Engine Optimization
             </h3>
-            <p className='font-HG font-medium text-lg text-black text-opacity-70 my-6'>
+            <p className='my-6 font-HG text-lg font-medium text-black text-opacity-70'>
               Search engine optimization is the process behind the making your
               website easy to find. Our SEO experts will help you rank higher in
               search engines and drive more traffic to your site organically.
@@ -73,10 +73,10 @@ const Services = () => {
             </p>
             <Button text='Book a free 30 minute meeting' full={true} />
           </article>
-          <article className='p-16 sm:p-5 sm:flex sm:flex-col sm:text-center shadow-2xl rounded-xl sm:items-center'>
-            <img src={ServicesContent} alt='' className='sm:w-24 sm:h-auto' />
-            <h3 className='font-sans font-bold text-2xl my-6'>Web Content</h3>
-            <p className='font-HG font-medium text-lg text-black text-opacity-70 my-6'>
+          <article className='rounded-xl p-16 shadow-2xl sm:flex sm:flex-col sm:items-center sm:p-5 sm:text-center'>
+            <img src={ServicesContent} alt='' className='sm:h-auto sm:w-24' />
+            <h3 className='my-6 font-sans text-2xl font-bold'>Web Content</h3>
+            <p className='my-6 font-HG text-lg font-medium text-black text-opacity-70'>
               Do you need a content update on your site? Perhaps you are adding
               information to your website or building it from scratch?
               Professionally created web content, which is highly informative,
@@ -91,12 +91,12 @@ const Services = () => {
         </div>
       </section>
 
-      <section className='text-center bg-primary'>
+      <section className='bg-primary text-center'>
         <section className='container mx-auto py-28 sm:px-10'>
-          <h1 className='font-sans font-bold text-4xl text-white mb-10'>
+          <h1 className='mb-10 font-sans text-4xl font-bold text-white'>
             What Happens When I Hire Lunar Strategy?
           </h1>
-          <p className='font-HG font-semibold text-xl text-white leading-relaxed'>
+          <p className='font-HG text-xl font-semibold leading-relaxed text-white'>
             When you hire Lunar Strategy, you get an external digital marketing
             team that drives your entire digital marketing towards measurable
             results. The marketing strategy that we lay out is based on your

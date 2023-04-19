@@ -44,13 +44,13 @@ function App() {
       />
 
       <section className='container mx-auto flex flex-col px-10'>
-        <h1 className='font-sans text-5xl font-bold text-center mt-72 sm:mt-28 mb-14 sm:pb-32'>
+        <h1 className='mb-14 mt-72 text-center font-sans text-5xl font-bold sm:mt-28 sm:pb-32'>
           How it works
         </h1>
-        <article className='home-article self-start sm:self-center relative before:content-["01"] number-before'>
+        <article className='home-article number-before relative self-start before:content-["01"] sm:self-center'>
           <img src={Goal} alt='' />
           <div className='ml-16 sm:ml-0'>
-            <h2 className='font-sans font-bold text-3xl text-primary sm:text-4xl sm:py-5'>
+            <h2 className='font-sans text-3xl font-bold text-primary sm:py-5 sm:text-4xl'>
               Goal
             </h2>
             <p>
@@ -60,10 +60,10 @@ function App() {
             </p>
           </div>
         </article>
-        <article className='home-article self-end sm:self-center relative after:content-["02"] number-after'>
+        <article className='home-article number-after relative self-end after:content-["02"] sm:self-center'>
           <img src={Competitors} alt='' />
           <div className='ml-16 sm:ml-0'>
-            <h2 className='font-sans font-bold text-3xl sm:text-4xl text-primary sm:py-5'>
+            <h2 className='font-sans text-3xl font-bold text-primary sm:py-5 sm:text-4xl'>
               Competitors
             </h2>
             <p>
@@ -74,10 +74,10 @@ function App() {
             </p>
           </div>
         </article>
-        <article className='home-article self-start sm:self-center relative before:content-["03"] number-before'>
+        <article className='home-article number-before relative self-start before:content-["03"] sm:self-center'>
           <img src={Strategy} alt='' />
           <div className='ml-16 sm:ml-0'>
-            <h2 className='font-sans font-bold text-3xl sm:text-4xl text-primary sm:py-5'>
+            <h2 className='font-sans text-3xl font-bold text-primary sm:py-5 sm:text-4xl'>
               Strategy
             </h2>
             <p>
@@ -88,10 +88,10 @@ function App() {
             </p>
           </div>
         </article>
-        <article className='home-article self-end sm:self-center relative after:content-["04"] number-after'>
+        <article className='home-article number-after relative self-end after:content-["04"] sm:self-center'>
           <img src={Launch} alt='' />
           <div className='ml-16 sm:ml-0'>
-            <h2 className='font-sans font-bold text-3xl sm:text-4xl text-primary sm:py-5'>
+            <h2 className='font-sans text-3xl font-bold text-primary sm:py-5 sm:text-4xl'>
               Launch
             </h2>
             <p>
@@ -104,23 +104,23 @@ function App() {
         </article>
       </section>
 
-      <section className='bg-primary text-white py-60 sm:py-20 mt-8 font-HG'>
+      <section className='mt-8 bg-primary py-60 font-HG text-white sm:py-20'>
         <div className='container mx-auto flex items-center sm:flex-col'>
           <article className='sm:w-full sm:p-10'>
             <Line />
-            <h1 className='font-sans font-bold text-6xl sm:text-5xl'>
+            <h1 className='font-sans text-6xl font-bold sm:text-5xl'>
               Book A Free Digital
               <br />
               Marketing Consultation
             </h1>
           </article>
-          <form className='flex flex-col justify-center items-end w-1/2 sm:w-full sm:p-10'>
+          <form className='flex w-1/2 flex-col items-end justify-center sm:w-full sm:p-10'>
             <input
               type='email'
               placeholder='Your Email'
-              className='bg-white mb-2 w-5/6 sm:w-full py-6 px-10 rounded-full sm:rounded-xl text-xl font-light text-black text-opacity-50'
+              className='mb-2 w-5/6 rounded-full bg-white px-10 py-6 text-xl font-light text-black text-opacity-50 sm:w-full sm:rounded-xl'
             />
-            <button className='bg-soft-brown mt-2 text-white w-5/6 sm:w-full  py-6 px-10 rounded-full sm:rounded-xl text-xl font-bold'>
+            <button className='mt-2 w-5/6 rounded-full bg-soft-brown px-10  py-6 text-xl font-bold text-white sm:w-full sm:rounded-xl'>
               Book my free meeting
             </button>
           </form>
@@ -129,11 +129,11 @@ function App() {
 
       <Testimonials />
 
-      <section className='bg-primary text-white py-60 sm:py-20 mt-8 font-HG'>
+      <section className='mt-8 bg-primary py-60 font-HG text-white sm:py-20'>
         <div className='container mx-auto flex items-center sm:flex-col'>
           <article className='w-5/12 sm:w-full sm:p-10'>
             <Line />
-            <h1 className='font-sans font-bold text-6xl leading-normal sm:text-5xl'>
+            <h1 className='font-sans text-6xl font-bold leading-normal sm:text-5xl'>
               Digital Marketing
               <br />
               Articles
@@ -142,7 +142,7 @@ function App() {
           {data.length > 0 && (
             <motion.section
               ref={slider}
-              className='overflow-hidden w-7/12 sm:w-full sm:px-10'
+              className='w-7/12 overflow-hidden sm:w-full sm:px-10'
             >
               <motion.section
                 drag='x'
@@ -159,13 +159,13 @@ function App() {
                   data.map((blog) => (
                     <motion.article
                       key={blog.id}
-                      className='bg-secondary rounded-xl px-12 sm:px-8 py-14 mr-8 font-HG'
+                      className='mr-8 rounded-xl bg-secondary px-12 py-14 font-HG sm:px-8'
                     >
-                      <h2 className='font-bold text-5xl w-96 sm:w-72 leading-tight'>
+                      <h2 className='w-96 text-5xl font-bold leading-tight sm:w-72'>
                         {blog.title}
                       </h2>
-                      <p className='font-light my-5'>{blog.text}</p>
-                      <button className='bg-white rounded-md py-5 px-9 font-HG font-bold text-black text-xl'>
+                      <p className='my-5 font-light'>{blog.text}</p>
+                      <button className='rounded-md bg-white px-9 py-5 font-HG text-xl font-bold text-black'>
                         Read More
                       </button>
                     </motion.article>
@@ -173,7 +173,7 @@ function App() {
               </motion.section>
             </motion.section>
           )}
-          <p className='md:hidden text-center font-HG mt-4 text-xl animate-bounce'>
+          <p className='mt-4 animate-bounce text-center font-HG text-xl md:hidden'>
             Slider {'>>'}{' '}
           </p>
         </div>

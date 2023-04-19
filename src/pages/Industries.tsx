@@ -24,35 +24,35 @@ const Industries = () => {
         url={IndustriesHero}
         button={false}
       />
-      <section className='container pb-20 mx-auto flex flex-col px-10'>
-        <h1 className='font-sans text-5xl font-bold text-center mt-72 sm:mt-28 mb-14 sm:pb-5'>
+      <section className='container mx-auto flex flex-col px-10 pb-20'>
+        <h1 className='mb-14 mt-72 text-center font-sans text-5xl font-bold sm:mt-28 sm:pb-5'>
           Our industries & expertise
         </h1>
-        <section className='flex sm:flex-col sm:gap-10 w-full px-52 sm:px-0 justify-between'>
-          <article className='basis-30p p-12 flex flex-col items-center justify-center text-center shadow-2xl rounded-3xl'>
-            <img src={IndustriesSaas} alt='saas' className='w-24 h-auto' />
-            <h2 className='font-sans font-bold text-2xl py-3'>SaaS</h2>
-            <p className='font-HG font-medium text-lg'>
+        <section className='flex w-full justify-between px-52 sm:flex-col sm:gap-10 sm:px-0'>
+          <article className='flex basis-30p flex-col items-center justify-center rounded-3xl p-12 text-center shadow-2xl'>
+            <img src={IndustriesSaas} alt='saas' className='h-auto w-24' />
+            <h2 className='py-3 font-sans text-2xl font-bold'>SaaS</h2>
+            <p className='font-HG text-lg font-medium'>
               We help a wide range of SaaS companies growing their lead
               generation online.
             </p>
           </article>
-          <article className='basis-30p p-12 flex flex-col items-center justify-center text-center shadow-2xl rounded-3xl'>
-            <img src={IndustriesB2b} alt='b2b' className='w-24 h-auto' />
-            <h2 className='font-sans font-bold text-2xl py-3'>B2B</h2>
-            <p className='font-HG font-medium text-lg'>
+          <article className='flex basis-30p flex-col items-center justify-center rounded-3xl p-12 text-center shadow-2xl'>
+            <img src={IndustriesB2b} alt='b2b' className='h-auto w-24' />
+            <h2 className='py-3 font-sans text-2xl font-bold'>B2B</h2>
+            <p className='font-HG text-lg font-medium'>
               Professional funnel advertising optimized for generating leads for
               B2B.
             </p>
           </article>
-          <article className='basis-30p p-12 flex flex-col items-center justify-center text-center shadow-2xl rounded-3xl'>
+          <article className='flex basis-30p flex-col items-center justify-center rounded-3xl p-12 text-center shadow-2xl'>
             <img
               src={IndustriesEcommerce}
               alt='ecommerce'
-              className='w-24 h-auto'
+              className='h-auto w-24'
             />
-            <h2 className='font-sans font-bold text-2xl py-3'>E-Commerce</h2>
-            <p className='font-HG font-medium text-lg'>
+            <h2 className='py-3 font-sans text-2xl font-bold'>E-Commerce</h2>
+            <p className='font-HG text-lg font-medium'>
               Grow your Ecommerce company and let us help attract and convert
               more customers.
             </p>
@@ -60,17 +60,17 @@ const Industries = () => {
         </section>
       </section>
 
-      <section className='bg-primary text-white py-32'>
-        <section className='mx-auto w-1/2 sm:w-full sm:px-10 text-center'>
-          <h2 className='font-sans font-bold text-4xl'>
+      <section className='bg-primary py-32 text-white'>
+        <section className='mx-auto w-1/2 text-center sm:w-full sm:px-10'>
+          <h2 className='font-sans text-4xl font-bold'>
             Get a free digital marketing consultation
           </h2>
-          <p className='font-HG font-medium text-xl py-8'>
+          <p className='py-8 font-HG text-xl font-medium'>
             Book a free 30-minute consultation with one of our experts.
             Absolutely no pressure, just a friendly rundown and some great
             advice.
           </p>
-          <button className='font-HG font-bold text-2xl sm:text-xl py-6 sm:py-2 px-12 bg-soft-brown rounded-full'>
+          <button className='rounded-full bg-soft-brown px-12 py-6 font-HG text-2xl font-bold sm:py-2 sm:text-xl'>
             Yes, I would like some advice
           </button>
         </section>
@@ -78,24 +78,24 @@ const Industries = () => {
 
       <Testimonials />
 
-      <section className='w-full py-18 sm:py-20 text-white bg-primary'>
-        <section className='container mx-auto flex sm:mx-0 sm:px-10 sm:flex-col items-center'>
+      <section className='py-18 w-full bg-primary text-white sm:py-20'>
+        <section className='container mx-auto flex items-center sm:mx-0 sm:flex-col sm:px-10'>
           <img
             src={IndustriesBook}
             alt='book'
-            className='w-1/2 sm:w-full mix-blend-hard-light'
+            className='w-1/2 mix-blend-hard-light sm:w-full'
           />
-          <section className='w-1/2 sm:w-full text-center'>
-            <h2 className='font-sans font-bold text-4xl'>
+          <section className='w-1/2 text-center sm:w-full'>
+            <h2 className='font-sans text-4xl font-bold'>
               Get a FREE complete editorial guide for social media growth
             </h2>
-            <p className='font-HG font-regular leading-10 text-xl py-8'>
+            <p className='font-regular py-8 font-HG text-xl leading-10'>
               Download your guide filled with clear, actionable tips on how your
               company can create successful organic content on social media.
               You'll find useful statistics as well as real-life examples and
               insights based on our own experiences as a social media agency.
             </p>
-            <button className='font-HG font-bold text-2xl py-4 px-6 bg-soft-brown rounded-full'>
+            <button className='rounded-full bg-soft-brown px-6 py-4 font-HG text-2xl font-bold'>
               Download Now
             </button>
           </section>
@@ -103,11 +103,11 @@ const Industries = () => {
       </section>
 
       <Form />
-      <section className='container mx-auto py-14 px-20 sm:px-10 text-center'>
-        <p className='font-HG font-regular text-2xl pb-10'>
+      <section className='container mx-auto px-20 py-14 text-center sm:px-10'>
+        <p className='font-regular pb-10 font-HG text-2xl'>
           Trusted by companies around the world
         </p>
-        <section className='flex justify-between h-10'>
+        <section className='flex h-10 justify-between'>
           <img
             src={IndustriesCompany1}
             alt='company img'

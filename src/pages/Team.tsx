@@ -32,25 +32,25 @@ const Team = () => {
         title='Logo Specialists'
         subtitle='Meet the awesome team behind Lunar Strategy.'
       />
-      <section className='container mx-auto w-full flex flex-wrap justify-between sm:px-10'>
+      <section className='container mx-auto flex w-full flex-wrap justify-between sm:px-10'>
         {team.length > 0 &&
           team.map((developer) => (
             <article
               key={developer.id}
-              className='flex flex-col items-center basis-30p sm:basis-full px-10 py-14 rounded-2xl bg-white shadow-2xl mt-10'
+              className='mt-10 flex basis-30p flex-col items-center rounded-2xl bg-white px-10 py-14 shadow-2xl sm:basis-full'
             >
-              <div className='w-32 h-32 rounded-full border-4 border-primary'>
+              <div className='h-32 w-32 rounded-full border-4 border-primary'>
                 <img
                   src={developer.avatar}
                   alt='avatar'
-                  className='rounded-full border-white border-4'
+                  className='rounded-full border-4 border-white'
                 />
               </div>
-              <h2 className='font-sans font-bold text-3xl'>{developer.name}</h2>
-              <p className='font-HG font-light text-xl py-6'>
+              <h2 className='font-sans text-3xl font-bold'>{developer.name}</h2>
+              <p className='py-6 font-HG text-xl font-light'>
                 {developer.position}
               </p>
-              <p className='font-HG font-light text-soft-purple text-xl text-center pb-8'>
+              <p className='pb-8 text-center font-HG text-xl font-light text-soft-purple'>
                 {developer.country}, {developer.town}
                 <br />
                 {developer.email}

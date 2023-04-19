@@ -3,9 +3,9 @@ import { Facebook, Instagram, LinkedIn, Twitter } from '../images';
 
 const Footer = () => {
   return (
-    <footer className='py-32 px-72 sm:py-16 sm:px-10 bg-primary font-HG flex sm:flex-col justify-between'>
+    <footer className='flex justify-between bg-primary px-72 py-32 font-HG sm:flex-col sm:px-10 sm:py-16'>
       <ul className='list-none font-light leading-8'>
-        <Link to={'/'} className='font-HG font-bold text-2xl'>
+        <Link to={'/'} className='font-HG text-2xl font-bold'>
           LOGO
         </Link>
         <li className='mt-8'>LOGO STUDIO AB</li>
@@ -13,16 +13,16 @@ const Footer = () => {
         <li>Lunar Holding LDA</li>
         <li>info@logo.io</li>
         <li>+000-01234567</li>
-        <section className='flex justify-between mt-8 items-center sm:hidden'>
+        <section className='mt-8 flex items-center justify-between sm:hidden'>
           <img src={Facebook} alt='Facebook' />
           <img src={Twitter} alt='Twitter' />
           <img src={LinkedIn} alt='LinkedIn' />
           <img src={Instagram} alt='Instagram' />
         </section>
       </ul>
-      <section className='flex sm:justify-between sm:mt-10'>
+      <section className='flex sm:mt-10 sm:justify-between'>
         <ul className='list-none font-light leading-8 sm:w-1/2'>
-          <h4 className='font-bold text-2xl mb-6'>Company</h4>
+          <h4 className='mb-6 text-2xl font-bold'>Company</h4>
           <li>
             <Link to={'/'}>Home</Link>
           </li>
@@ -43,8 +43,8 @@ const Footer = () => {
           </li>
         </ul>
 
-        <ul className='list-none font-light ml-36 leading-8 sm:ml-0 sm:w-1/2'>
-          <h4 className='font-bold text-2xl mb-6'>Services</h4>
+        <ul className='ml-36 list-none font-light leading-8 sm:ml-0 sm:w-1/2'>
+          <h4 className='mb-6 text-2xl font-bold'>Services</h4>
           <li>
             <Link to={'/'}>Digital Marketing</Link>
           </li>
@@ -68,7 +68,7 @@ const Footer = () => {
           </li>
         </ul>
       </section>
-      <section className=' w-full h-8 flex justify-between mt-8 items-center md:hidden'>
+      <section className=' mt-8 flex h-8 w-full items-center justify-between md:hidden'>
         <img src={Facebook} alt='Facebook' />
         <img src={Twitter} alt='Twitter' />
         <img src={LinkedIn} alt='LinkedIn' />

@@ -26,15 +26,15 @@ const Blog = () => {
   return (
     <Layout>
       <Header title='Logo Blog' subtitle='Digital Marketing Articles' />
-      <section className='container mx-auto w-full flex flex-wrap justify-between sm:px-10'>
+      <section className='container mx-auto flex w-full flex-wrap justify-between sm:px-10'>
         {blogs.length > 0 &&
           blogs.map((blog) => (
             <article
               key={blog.id}
-              className='basis-30p sm:basis-full px-9 pt-14 pb-10 rounded-2xl bg-white shadow-2xl mt-10'
+              className='mt-10 basis-30p rounded-2xl bg-white px-9 pb-10 pt-14 shadow-2xl sm:basis-full'
             >
-              <h2 className='font-sans font-bold text-3xl'>{blog.title}</h2>
-              <p className='font-HG font-light text-lg pt-7 pb-14 ml-0'>
+              <h2 className='font-sans text-3xl font-bold'>{blog.title}</h2>
+              <p className='ml-0 pb-14 pt-7 font-HG text-lg font-light'>
                 {blog.text}
               </p>
               <Button text='Read More' full={false} />
