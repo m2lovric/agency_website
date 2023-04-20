@@ -19,17 +19,17 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch(
+      const res = await (await fetch(
         'https://raw.githubusercontent.com/m2lovric/agency_website/main/db/blog.json'
-      );
-      res.json().then((data) => {
-        setData(data);
-      });
+      )).json();
+
+      setData(res);
     };
 
     fetchData();
+
     if (slider.current) {
-      setWidth(slider.current?.scrollWidth - slider.current?.offsetWidth);
+      setWidth(slider.current.scrollWidth - slider.current.offsetWidth);
     }
   }, []);
 

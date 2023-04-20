@@ -14,10 +14,11 @@ const Blog = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch(
+      const res = await (await fetch(
         'https://raw.githubusercontent.com/m2lovric/agency_website/main/db/blog.json'
-      );
-      res.json().then((data) => setBlogs(data));
+      )).json();
+      
+      setBlogs(res)
     };
 
     fetchData();

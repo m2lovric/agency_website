@@ -18,10 +18,11 @@ const Team = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch(
+      const res = await (await fetch(
         'https://raw.githubusercontent.com/m2lovric/agency_website/main/db/specialists.json'
-      );
-      res.json().then((data) => setTeam(data));
+      )).json();
+
+      setTeam(res);
     };
 
     fetchData();

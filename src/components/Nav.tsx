@@ -2,18 +2,23 @@ import { Link } from 'react-router-dom';
 import LinkBorder from './LinkBorder';
 import { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { debounce } from 'debounce';
 
 const Nav = () => {
   const [clicked, setClicked] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    const handleWindowResize = () => {
+    const handleWindowResize = debounce(() => {
       setWidth(window.innerWidth);
       console.log(width);
-    };
+    }, 300);
 
     window.addEventListener('resize', handleWindowResize);
+    
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    }
   }, []);
 
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
